@@ -182,9 +182,9 @@ template {
 /* base.css */
 @font-face {
   font-family: "opendyslexic";
-  src: url("/fonts/OpenDyslexic-Regular.woff2"),
-    url("/fonts/OpenDyslexic-Regular.woff"),
-    url("/fonts/OpenDyslexic-Regular.otf");
+  src: url("/fonts/OpenDyslexic-Regular.woff2") format("woff2"),
+    url("/fonts/OpenDyslexic-Regular.woff") format("woff"),
+    url("/fonts/OpenDyslexic-Regular.otf") format("otf");
   font-style: normal;
   font-weight: normal;
   font-display: swap;
@@ -192,9 +192,9 @@ template {
 
 @font-face {
   font-family: "opendyslexic";
-  src: url("/fonts/OpenDyslexic-Italic.woff2"),
-    url("/fonts/OpenDyslexic-Italic.woff"),
-    url("/fonts/OpenDyslexic-Italic.otf");
+  src: url("/fonts/OpenDyslexic-Italic.woff2") format("woff2"),
+    url("/fonts/OpenDyslexic-Italic.woff") format("woff"),
+    url("/fonts/OpenDyslexic-Italic.otf") format("otf");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -202,8 +202,9 @@ template {
 
 @font-face {
   font-family: "opendyslexic";
-  src: url("/fonts/OpenDyslexic-Bold.woff2"),
-    url("/fonts/OpenDyslexic-Bold.woff"), url("/fonts/OpenDyslexic-Bold.otf");
+  src: url("/fonts/OpenDyslexic-Bold.woff2") format("woff2"),
+    url("/fonts/OpenDyslexic-Bold.woff") format("woff"),
+    url("/fonts/OpenDyslexic-Bold.otf") format("otf");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -211,9 +212,9 @@ template {
 
 @font-face {
   font-family: "opendyslexic";
-  src: url("/fonts/OpenDyslexic-BoldItalic.woff2"),
-    url("/fonts/OpenDyslexic-BoldItalic.woff"),
-    url("/fonts/OpenDyslexic-BoldItalic.otf");
+  src: url("/fonts/OpenDyslexic-BoldItalic.woff2") format("woff2"),
+    url("/fonts/OpenDyslexic-BoldItalic.woff") format("woff"),
+    url("/fonts/OpenDyslexic-BoldItalic.otf") format("otf");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -221,9 +222,9 @@ template {
 
 @font-face {
   font-family: "opendyslexic-mono";
-  src: url("/fonts/OpenDyslexicMono-Regular.woff2"),
-    url("/fonts/OpenDyslexicMono-Regular.woff"),
-    url("/fonts/OpenDyslexicMono-Regular.otf");
+  src: url("/fonts/OpenDyslexicMono-Regular.woff2") format("woff2"),
+    url("/fonts/OpenDyslexicMono-Regular.woff") format("woff"),
+    url("/fonts/OpenDyslexicMono-Regular.otf") format("otf");
   font-weight: normal;
   font-display: swap;
 }
@@ -288,7 +289,7 @@ figcaption p {
     background-color: white;
   }
   body {
-    font-size: 10pt;
+    font-size: 16pt;
   }
   nav {
     display: none;
