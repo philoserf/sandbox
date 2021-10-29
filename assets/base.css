@@ -180,11 +180,13 @@ template {
 }
 
 /* base.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,900;1,400;1,900&display=swap');
 
 body {
   margin: 2% 10% 5%;
   font-size: 18px;
   line-height: 125%;
+  font-family: 'Lato', sans-serif;
 }
 
 header nav,
@@ -193,6 +195,7 @@ footer nav,
 footer p {
   font-size: 75%;
   line-height: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 header nav,
