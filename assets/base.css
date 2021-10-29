@@ -180,8 +180,6 @@ template {
 }
 
 /* base.css */
-@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Code:wght@500;700&family=Lato:ital,wght@0,400;0,900;1,400;1,900&display=swap");
-
 body {
   margin: 2% 10% 5%;
   font-size: 18px;
