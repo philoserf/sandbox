@@ -5,6 +5,7 @@ ignore: |
   resources/
   public/
   .github/workflows/build.yml
+  .github/workflows/codeql-analysis.yml
 
 yaml-files:
   - "*.yaml"
