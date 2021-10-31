@@ -2,7 +2,6 @@
 title: Alpha sentences
 description: ""
 date: 2021-05-21
-pinned: true
 terms: [list]
 ---
 

@@ -2,7 +2,6 @@
 title: A sentences
 description: ""
 date: 2021-06-21
-pinned: true
 terms: [list]
 ---
 
