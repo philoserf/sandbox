@@ -5,8 +5,8 @@
   <main>
     {{ .Content }}
     <section>
-      <h3>Recent article</h3>
-      {{ range first 1 (where .Site.RegularPages "Section" "articles") }}
+      <h3>Recent articles</h3>
+      {{ range first 3 (where .Site.RegularPages "Section" "articles") }}
         <p>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
           {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
@@ -27,8 +27,8 @@
       {{ end }}
     </section>
     <section>
-      <h3>Recently updated note</h3>
-      {{ range first 1 (where .Site.RegularPages "Section" "notes") }}
+      <h3>Recently updated notes</h3>
+      {{ range first 3 (where .Site.RegularPages "Section" "notes") }}
         <p>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
           {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
