@@ -2,7 +2,6 @@
 title: MKD syntax
 description: ""
 date: 2021-03-11
-featured: true
 topics: [markdown]
 terms: [markdown]
 ---

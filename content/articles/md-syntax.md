@@ -2,7 +2,6 @@
 title: MD syntax
 description: ""
 date: 2020-03-11
-featured: true
 topics: [markdown]
 terms: [markdown]
 ---
