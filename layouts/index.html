@@ -6,7 +6,7 @@
     {{ .Content }}
     <section>
       <h3>Recent articles</h3>
-      {{ range first 6 (where .Site.RegularPages "Section" "articles") }}
+      {{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Section" "articles") }}
         <p>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
           {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
@@ -28,7 +28,7 @@
     </section>
     <section>
       <h3>Recently updated notes</h3>
-      {{ range first 3 (where .Site.RegularPages "Section" "notes") }}
+      {{ range first 3 (where .Site.RegularPages.ByDate.Reverse "Section" "notes") }}
         <p>
           <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
           {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
