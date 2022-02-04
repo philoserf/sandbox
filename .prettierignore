@@ -3,4 +3,4 @@ resources/_gen/
 hugo_stats.json
 /archetypes/*.md
 .github/workflows/codeql-analysis.yml
-layouts/_default/baseof.html
+layouts/
