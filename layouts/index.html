@@ -4,63 +4,10 @@
 {{ define "main" }}
   <main>
     {{ .Content }}
-    <section>
-      <h3>Recent articles</h3>
-      {{ range first 2 (where .Site.RegularPages.ByDate.Reverse "Section" "articles") }}
-        <p>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
-          {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
-          {{ .Summary | truncate 80 }}
-        </p>
-      {{ end }}
-    </section>
-    <section>
-      <h3>Featured</h3>
-      {{ range .Site.Pages }}
-        {{ if isset .Params "featured" }}
-          <p>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
-            {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
-            {{ .Summary | truncate 80 }}
-          </p>
-        {{ end }}
-      {{ end }}
-    </section>
-    <section>
-      <h3>Recently updated notes</h3>
-      {{ range first 2 (where .Site.RegularPages.ByDate.Reverse "Section" "notes") }}
-        <p>
-          <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
-          {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
-          {{ .Summary | truncate 80 }}
-        </p>
-      {{ end }}
-    </section>
-    <section>
-      <h3>Pinned</h3>
-      {{ range .Site.Pages }}
-        {{ if isset .Params "pinned" }}
-          <p>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a> &vert;
-            {{ .Date.Format "2006-01-02" }} &vert; {{ .WordCount }} words<br />
-            {{ .Summary | truncate 80 }}
-          </p>
-        {{ end }}
-      {{ end }}
-    </section>
   </main>
 {{ end }}
 {{ define "footer" }}
   <hr />
-  <nav>
-    <a href="/topics/">Index</a> &vert;
-    <a
-      target="_blank"
-      href="https://www.google.com/search?q=site%3Amarkpaulayers.com"
-      >Search</a
-    >
-  </nav>
-  <p><a href="/">&hellip;</a></p>
   <p>
     <a property="dct:title" rel="cc:attributionURL" href="{{ .RelPermalink }}"
       >{{ .Site.Title }}</a
@@ -79,6 +26,6 @@
       style="display: inline-block"
       href="http://creativecommons.org/licenses/by/4.0/"
       >CC BY 4.0</a
-    >.<br />Exceptions have a seperate attribution and license statement.
+    >.<br />Exceptions have a separate attribution and license statement.
   </p>
 {{ end }}

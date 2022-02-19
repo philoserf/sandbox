@@ -48,7 +48,6 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Code:wght@300;500;700&family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
     <!-- inline css -->
     {{ with resources.Get "base.css" | postCSS | minify | resources.PostProcess }}
       <style>
@@ -72,12 +71,10 @@
       <h1><a href="/">{{ .Site.Title }}</a></h1>
       <hr />
       <nav>
-        <a href="/now/">Now</a> &vert; <a href="/page/">Page</a> &vert;
-        <a href="/articles/">Articles</a> &vert;
-        <a href="/notes/">Notes</a> &vert;
-        <a href="/about/">About</a>
+        <a href="/now/">Now</a> &vert;
+        <a href="https://notes.philoserf.com/">Notes</a> &vert;
+        <a href="/colophon/">Colophon</a>
       </nav>
-      <p><a href="/">&hellip;</a></p>
     </header>
     {{ block "main" . }}<main>{{ .Content }}</main>{{ end }}
     <footer>{{ block "footer" . }}{{ end }}</footer>

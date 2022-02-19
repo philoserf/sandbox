@@ -1,15 +1,18 @@
 ---
 title: Now
-description: ""
-date: 2021-05-09
-topics: [now]
-terms: [lorem ipsum]
+description: My current condition and situation.
+date: 2022-01-04
+terms: [gratitude, focus, dreams, list, seattle]
 ---
 
-Ex enim magna excepteur laborum ipsum. Aliquip et incididunt qui laborum fugiat irure voluptate in aute. Laboris eiusmod sint et fugiat magna est nostrud irure. Sit labore irure ut consectetur sunt.
+I am …
 
-This is a [Now][99] page. You should have one too.
+… looking forward to a few winter day-long and long-weekend trips with my wife
+
+… dreaming of the end of this global pandemic
+
+This is a [Now][1] page. You should have one too.
 
 <!-- ref -->
 
-[99]: https://nownownow.com/about
+[1]: https://sive.rs/nowff

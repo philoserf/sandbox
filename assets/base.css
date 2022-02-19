@@ -180,6 +180,8 @@ template {
 }
 
 /* base.css */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:wght@700&display=swap");
+
 body {
   margin: 2% 10% 5%;
   font-size: 18px;
@@ -193,7 +195,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 pre,
