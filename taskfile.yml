@@ -1,0 +1,27 @@
+---
+# https://taskfile.dev
+version: "3"
+
+tasks:
+  default:
+    deps:
+      - bootstrap
+      - test
+
+  bootstrap:
+    generates:
+      - Brewfile.lock.json
+    cmds:
+      - brew bundle
+
+  fix:
+    cmds:
+      - prettier --write --list-different --ignore-unknown .
+
+  test:
+    cmds:
+      - prettier --check --ignore-unknown .
+      - |
+        act push \
+          --secret GITHUB_TOKEN="$(gh auth token)"  \
+          --container-architecture linux/amd64
