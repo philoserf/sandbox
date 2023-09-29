@@ -1,5 +1,5 @@
 ---
-name: github-pages
+name: deploy
 
 on:
   workflow_dispatch: null
@@ -17,7 +17,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_ALL_CODEBASE: false
 
-  pages:
+  deploy:
     if: github.repository == 'philoserf/sandbox'
     needs: [lint]
     runs-on: ubuntu-latest
