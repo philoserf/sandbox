@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: super-linter/super-linter@v5
-        # env:
-        #   DEFAULT_BRANCH: main
-        #   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        #   VALIDATE_ALL_CODEBASE: false
+        env:
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: false
