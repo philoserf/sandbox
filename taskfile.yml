@@ -1,12 +1,9 @@
----
 # https://taskfile.dev
 version: "3"
 
 tasks:
   default:
-    deps:
-      - bootstrap
-      - test
+    deps: [test]
 
   bootstrap:
     generates:
@@ -15,10 +12,13 @@ tasks:
       - brew bundle
 
   fix:
+    deps: [bootstrap]
     cmds:
       - prettier --write --list-different --ignore-unknown .
+      - markdownlint --fix .
 
   test:
+    deps: [bootstrap]
     cmds:
       - prettier --check --ignore-unknown .
       - |
