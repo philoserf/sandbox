@@ -13,7 +13,7 @@ params:
   info: a human being, being human
   description: a place to play
   commit: https://github.com/philoserf/sandbox/tree/
-  keywords: Sandbox
+  keywords: sandbox
   avatarURL: /img/avatar.jpg
   hideColorSchemeToggle: true
   social:
