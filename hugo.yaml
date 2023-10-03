@@ -1,7 +1,7 @@
 title: sandbox
 baseURL: https://markpaulayers.com/
 languageCode: en-US
-copyright: 2023, Mark Ayers; all rights reserved.
+copyright: Mark Ayers
 
 module:
   imports:
