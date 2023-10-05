@@ -27,7 +27,7 @@ params:
       icon: "fa fa-linkedin fa-2x"
       url: https://linkedin.com/in/markpaulayers/
     - name: Notes
-      icon: “fa fa-file-text fa-2x"
+      icon: “fa fa-file fa-2x"
       url: https://notes.philoserf.com/
     - name: CV
       icon: "fa fa-briefcase fa-2x"
