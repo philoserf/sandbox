@@ -16,6 +16,7 @@ params:
   commit: https://github.com/philoserf/sandbox/tree/
   keywords: sandbox
   avatarURL: /img/avatar.jpg
+  colorScheme: auto
   hideColorSchemeToggle: true
   social:
     - name: GitHub
