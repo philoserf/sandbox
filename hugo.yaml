@@ -17,7 +17,7 @@ params:
   keywords: sandbox
   avatarURL: /img/avatar.jpg
   colorScheme: auto
-  hideColorSchemeToggle: true
+  hideColorSchemeToggle: false
   social:
     - name: GitHub
       icon: "fa fa-github fa-2x"
