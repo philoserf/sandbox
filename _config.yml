@@ -1,0 +1,7 @@
+title: "Mark Ayers"
+name: "Mark"
+email: "mark@philoserf.com"
+theme: minima
+minima:
+  skin: auto
+  date_format: "%Y-%m-%d"
