@@ -11,7 +11,7 @@ Use one file until you need another.
 Use one folder until you need another.  
 Submit to defaults first; customize intentionally.
 
-Deeply think, learn constantly, make unexpected connections, and articulate complex ideas with confidence in a strategic vision.
+Think deeply, learn continuously, reveal connections, articulate clearly—all with strategic vision.
 
 ## Who I Am
 
