@@ -21,10 +21,10 @@ A former US Army paratrooper and Ranger. I have worked in large and very large c
 
 When not solving complex problems, you might find me:
 
-- Traversing backcountry trails with everything I need on my back.
-- Exploring far-flung corners of the world.
+- Hiking backcountry trails with backpack.
+- Exploring culture and landscape in the world.
 - Crafting the perfect balance of flavors in a cocktail glass.
-- Finding rhythm and meaning in spoken word.
+- Finding rhythm and meaning with the spoken word.
 
 ## Connect
 
