@@ -1,3 +1,5 @@
+## COGITA·DISCE·NECTE·ENVNTIA
+
 _We are all human beings, being human._
 
 ## Philosophy
