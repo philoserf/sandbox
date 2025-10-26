@@ -13,11 +13,11 @@ Submit to defaults first; customize intentionally.
 
 Think deeply, learn continuously, reveal connections, articulate clearly—all with strategic vision.
 
-## Who I Am 
+## Who I Am
 
 A former US Army paratrooper and Ranger, I’ve worked in various settings, from large corporations to small startups and middling-scale-ups, specializing in acquiring new skills. I earned my Bachelor of Arts in Political Science from the University at Albany, focusing on international economics. Since then, I’ve learned independently, broadening my knowledge across diverse fields and exploring areas where connections emerge.
 
-## Beyond Work 
+## Beyond Work
 
 When I step away from complex problems, I’m drawn to adventures that challenge and inspire. My backpack and I navigate remote backcountry trails, while my passport collects stamps from cultural explorations across continents. Back home, my creative side emerges through the careful balance of spirits and flavors in a cocktail glass, and in moments where I can capture the power of rhythm and meaning with the spoken word.
 
