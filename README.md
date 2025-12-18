@@ -1,28 +1,18 @@
-_We are all human beings, being human._
+This is where I think in public—exploring ideas as they arrive, reflecting on experience earned over years, sharing the things I had to learn the hard way, testing what might help others think better, and saying what I believe needs saying—clearly, publicly, and without hedging.
 
-## Philosophy
+We are all human beings, being human.
 
-Yes, and…  
-Name things once.  
-Assume good intentions.  
-Only ask for permission once.  
-Simplicity is hard but essential.  
-Use one file until you need another.  
-Use one folder until you need another.  
-Submit to defaults first; customize intentionally.
+HOMO·HOMINIS·ESSE
+COGITA·DISCE·NECTE·ENUNTIA
 
-Think deeply, learn continuously, reveal connections, articulate clearly—all with strategic vision.
+I keep my rules simple: say yes and build; name things once; assume good intentions; ask for permission only when it matters; keep tools and structure as small as possible; follow defaults until they fail; keep the signal sharp.
 
-## Who I Am
+I’ve spent time in small towns, big cities, ancient ruins, busy shops, server rooms, and a few places in between. I’ve shoveled snow, served burgers, worn a uniform, led teams, survived meetings that should’ve been emails, and worked alongside people trying to make something better.
 
-A former US Army paratrooper and Ranger, I’ve worked in various settings, from large corporations to small startups and middling-scale-ups, specializing in acquiring new skills. I earned my Bachelor of Arts in Political Science from the University at Albany, focusing on international economics. Since then, I’ve learned independently, broadening my knowledge across diverse fields and exploring areas where connections emerge.
+Years in the Army taught me how clarity and discipline can carry a team through chaos. Time in nonprofits reminded me that small groups can move mountains. Work across companies of every size revealed that good people everywhere are trying to solve hard problems with limited time.
 
-## Beyond Work
+What I carry from all of it: a sense of consequence, a habit of watching the edges, and the belief that thought only becomes real when translated into words others can use.
 
-When I step away from complex problems, I’m drawn to adventures that challenge and inspire. My backpack and I navigate remote backcountry trails, while my passport collects stamps from cultural explorations across continents. Back home, my creative side emerges through the careful balance of spirits and flavors in a cocktail glass, and in moments where I can capture the power of rhythm and meaning with the spoken word.
+The easiest way to reach me: mark@philoserf.com
 
-## Connect
-
-The simplest way to reach me: [mark@philoserf.com](mailto:mark@philoserf.com)
-
-_The views expressed here are my own. They are not endorsed, approved, or reviewed by any other person or organization._
+The views here are my own.
