@@ -2,5 +2,7 @@ _extends: .github
 
 repository:
   name: sandbox
-  description: "COGITA·DISCE·NECTE·ENVNTIA"
+  description: "COGITA·DISCE·NECTE·ENUNTIA"
+  topics:
+    - sandbox
   homepage: http://markpaulayers.com/
