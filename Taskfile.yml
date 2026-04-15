@@ -1,0 +1,85 @@
+version: "3"
+
+vars:
+  HUGO_ENV: development
+
+tasks:
+  default:
+    cmds:
+      - task: help
+
+  help:
+    desc: Show available tasks
+    cmds:
+      - task --list
+
+  setup:
+    desc: Install required tools with Homebrew
+    sources: [Brewfile]
+    generates: [Brewfile.lock.json]
+    cmds:
+      - brew bundle
+    platforms: [darwin]
+
+  dev:
+    desc: Start development server with draft and future content
+    deps: [setup]
+    cmds:
+      - hugo server -D -F --disableFastRender --baseURL http://localhost:1313/
+
+  build:
+    desc: Build site for production
+    deps: [setup]
+    sources:
+      - hugo.yaml
+      - content/**/*
+      - static/**/*
+      - layouts/**/*
+      - archetypes/**/*
+    generates:
+      - public/**/*
+    cmds:
+      - hugo --minify
+    env:
+      HUGO_ENV: production
+
+  clean:
+    desc: Clean up generated files
+    cmds:
+      - rm -rf public resources
+
+  check:
+    desc: Check content and links
+    deps: [setup]
+    cmds:
+      - hugo --renderToMemory
+
+  new:
+    desc: Create a new content file
+    deps: [setup]
+    cmds:
+      - hugo new {{.CLI_ARGS}}
+    silent: true
+
+  new:post:
+    desc: Create a new blog post
+    deps: [setup]
+    cmds:
+      - hugo new posts/{{.CLI_ARGS}}.md
+    silent: true
+
+  format:
+    desc: Format code using Prettier (excluding Hugo templates)
+    cmds:
+      - bunx prettier --write .
+
+  optimize-images:
+    desc: Optimize PNG and JPEG images in static/
+    deps: [setup]
+    cmds:
+      - |
+        echo "Optimizing PNG images..."
+        find static -name "*.png" -exec pngquant --force --ext .png --quality=65-80 {} \;
+        echo "Optimizing JPEG images..."
+        find static \( -name "*.jpg" -o -name "*.jpeg" \) -exec mogrify -strip -interlace Plane -quality 85 {} \;
+        echo "Image optimization complete."
