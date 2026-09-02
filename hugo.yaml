@@ -7,7 +7,7 @@ taxonomies: {} # intentionally empty to disable tags and categories
 params:
   author: "Mark Ayers"
   since: 2005
-  description: "Personal digital presence of Mark Ayers — semi-weekly essays on technology, strategy, and personal development."
+  description: "Mark Ayers — thinking, learning, connecting, declaring. Personal site."
   email: "mark@philoserf.com"
   motto: "COGITA·DISCE·NECTE·ENUNTIA"
   nickname: "philoserf"

@@ -2,7 +2,7 @@
 title: About
 ---
 
-This is where I think in public—sharing what I had to learn the hard way and saying what I believe needs saying.
+We are all human beings, being human.
 
 {{< latin-motto >}}
 
