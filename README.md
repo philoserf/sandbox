@@ -11,6 +11,7 @@ Everything else should stay a faithful mirror of `site`. The intended difference
 - `baseURL` and the `github.repository` guard in `deploy.yml` (this repo, not `philoserf.com`)
 - `static/CNAME.pending` instead of `static/CNAME` — the domain stays pointed at `site`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
+- `params.motto.lines`, two lines here to match the other properties; `site` carries a third, `PERCIPE·STRUE·EFFICE`
 - `content/posts/`, and `.prettierignore` not excluding it
 - `theory.md`, `walkthrough.md`, and `.claude/`, which document `site`'s publisher relationship
 
