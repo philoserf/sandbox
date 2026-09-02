@@ -13,7 +13,7 @@
   "description" $desc
   "author" $author
   "publisher" $publisher
-  "inLanguage" (.Site.LanguageCode | default "en")
+  "inLanguage" .Site.Language.Locale
 }}
 {{ if not .Date.IsZero }}{{ $jsonld = merge $jsonld (dict "datePublished" (.Date.Format "2006-01-02")) }}{{ end }}
 {{ if not .Lastmod.IsZero }}{{ $jsonld = merge $jsonld (dict "dateModified" (.Lastmod.Format "2006-01-02")) }}{{ end }}
@@ -21,15 +21,14 @@
 {{ end }}
 
 {{ define "main" }}
-<main id="main">
   <article>
-    <header>
+    <header class="article-head">
+      {{ if eq .Section "posts" }}<p class="eyebrow">Post</p>{{ else }}{{ with .Params.eyebrow }}<p class="eyebrow">{{ . }}</p>{{ end }}{{ end }}
       <h1>{{ .Title }}</h1>
-      {{ if not .Date.IsZero }}
-      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-      {{ end }}
+      {{ with .Description }}<p class="deck">{{ . }}</p>{{ end }}
+      {{ if not .Date.IsZero }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
     </header>
     <div class="content">{{ .Content }}</div>
+    {{ if eq .Section "posts" }}<aside class="continue"><p class="eyebrow">Continue reading</p><a href="{{ "/posts/" | relURL }}">Browse all posts &rarr;</a></aside>{{ end }}
   </article>
-</main>
 {{ end }}

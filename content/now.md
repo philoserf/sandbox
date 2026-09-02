@@ -1,5 +1,10 @@
 ---
 title: Now
+eyebrow: "Currently"
+description: "What I'm reading, focused on, and looking toward right now. Updated when reality changes."
+lastmod: 2026-08-17
+aliases:
+  - /posts/now/
 ---
 
 ## Where am I
@@ -8,25 +13,22 @@ At home in Greater Grand Rapids, Michigan
 
 ## What am I reading
 
-- _Apple: The First 50 Years_ by David Pogue (2026)
 - _There is No Antimemetics Division_ by Qntm (2025)
-- _Meru_ by S.B. Divya (2023)
-- _Thieves' World_ edited by Robert Lynn Asprin (1979)
-- _Confessions of an English Opium-Eater_ by Thomas De Quincey (1821)
+- _Derai_ by E. C. Tubb (1968)
+- _Practical Mysticism_ by Evelyn Underhill (1914)
+- _Wonderworks_ by Angus Fletcher (2019)
 
 ## What am I focused on
 
-- Writing and publishing essays on philosophy, identity, and how I see the world
-- Using [Claude Code](https://code.claude.com/docs/en/overview) as a writing partner, editor, and vault manager—not just for code
-- Curating and connecting notes across a 2,400-note Obsidian vault
+- Continuing a running routine
+- Refinding my golf swing and game
+- Settling back into home after a three-week road trip
 
 ## What I'm looking forward to
 
-- Long walks outside now that spring is here
-- A spring getaway long weekend
-- [GopherCon 2026](https://gophercon.com/) in Seattle in August
 - An autumn weeklong getaway
-- A trip to Ireland, in planning for 2027
+- [C&RBGC](https://crbgc.org) in June 2027
+- A trip to Ireland in autumn 2027
 
 ---
 

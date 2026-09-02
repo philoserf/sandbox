@@ -1,27 +1,74 @@
 {{ define "head" }}
 {{ $desc := partial "description.html" . }}
-{{ $person := dict
-  "@context" "https://schema.org"
-  "@type" "Person"
-  "name" .Site.Params.author
-  "email" .Site.Params.email
-  "url" .Site.Home.Permalink
-}}
-{{ $website := dict
-  "@context" "https://schema.org"
-  "@type" "WebSite"
-  "name" .Site.Title
-  "url" .Site.Home.Permalink
-  "description" $desc
-  "inLanguage" (.Site.LanguageCode | default "en")
-  "author" (dict "@type" "Person" "name" .Site.Params.author)
-}}
+{{ $person := dict "@context" "https://schema.org" "@type" "Person" "name" .Site.Params.author "email" .Site.Params.email "url" .Site.Home.Permalink }}
+{{ $website := dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "url" .Site.Home.Permalink "description" $desc "inLanguage" .Site.Language.Locale "author" (dict "@type" "Person" "name" .Site.Params.author) }}
 <script type="application/ld+json">{{ $website | jsonify (dict "indent" "  ") | safeJS }}</script>
 <script type="application/ld+json">{{ $person | jsonify (dict "indent" "  ") | safeJS }}</script>
 {{ end }}
 
+{{ define "main-class" }}home-main{{ end }}
+
 {{ define "main" }}
-<main id="main">
-  <div class="homepage-content">{{ .Content }}</div>
-</main>
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $posts = $posts.ByDate.Reverse }}
+{{ $featured := slice }}
+{{ with .Site.Params.home.featured }}
+  {{ $featured = partial "resolve-pagerefs.html" (dict "refs" . "what" "featured") }}
+{{ else }}
+  {{ range first 1 $posts }}
+    {{ $featured = $featured | append (dict "page" . "note" .Description) }}
+  {{ end }}
+{{ end }}
+{{ $featuredLinks := slice }}
+{{ range $featured }}{{ $featuredLinks = $featuredLinks | append .page.RelPermalink }}{{ end }}
+{{ $recent := where $posts "RelPermalink" "not in" $featuredLinks | first 4 }}
+
+  <section class="hero">
+    <div class="hero-text">
+      <p class="eyebrow">Writing in public</p>
+      <h1>{{ .Site.Params.home.headline }}</h1>
+      <p class="hero-copy">{{ .Site.Params.description }}</p>
+    </div>
+    <img class="hero-logo" src="{{ "/favicon.svg" | relURL }}" alt="" width="200" height="200" aria-hidden="true">
+  </section>
+
+  <section class="front-grid" aria-label="Featured and recent posts">
+    <div class="featured-stack">
+      {{ range $featured }}
+      <article class="featured">
+        <p class="eyebrow">Featured post</p>
+        <h2><a href="{{ .page.RelPermalink }}">{{ .page.Title }}</a></h2>
+        <p>{{ .note }}</p>
+        <div class="meta"><time datetime="{{ .page.Date.Format "2006-01-02" }}">{{ .page.Date.Format "January 2, 2006" }}</time><span>Post</span></div>
+      </article>
+      {{ end }}
+    </div>
+    <div class="recent">
+      <div class="section-heading"><h2>Recent</h2><a href="{{ "/posts/" | relURL }}">All posts</a></div>
+      {{ range $recent }}
+      <article class="post-row">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time>
+        <p>{{ partial "description.html" . }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="start-here">
+    <div class="start-intro">
+      <h2>Start here</h2>
+      <p>{{ .Site.Params.home.startHereIntro }}</p>
+    </div>
+    <div class="start-grid">
+      {{ range $index, $item := partial "resolve-pagerefs.html" (dict "refs" .Site.Params.home.startHere "what" "startHere") }}
+        <article><span>{{ printf "%02d" (add $index 1) }}</span><div><h3><a href="{{ $item.page.RelPermalink }}">{{ $item.page.Title }}</a></h3><p>{{ $item.note }}</p></div></article>
+      {{ end }}
+    </div>
+  </section>
+
+  <section class="motto" aria-label="Guiding mottos">
+    {{ partial "motto.html" . }}
+    <img class="motto-logo" src="{{ "/favicon.svg" | relURL }}" alt="" width="120" height="120" aria-hidden="true">
+  </section>
 {{ end }}
