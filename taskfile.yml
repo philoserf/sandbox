@@ -1,8 +1,5 @@
 version: "3"
 
-vars:
-  HUGO_ENV: development
-
 tasks:
   default:
     cmds:
@@ -44,9 +41,7 @@ tasks:
     generates:
       - public/**/*
     cmds:
-      - hugo --minify
-    env:
-      HUGO_ENV: production
+      - hugo --gc --minify --panicOnWarning
 
   clean:
     desc: Clean up generated files
@@ -57,7 +52,7 @@ tasks:
     desc: Check content and links
     deps: [setup]
     cmds:
-      - hugo --renderToMemory
+      - hugo --renderToMemory --panicOnWarning
 
   new:
     desc: Create a new content file
