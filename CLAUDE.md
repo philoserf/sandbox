@@ -21,7 +21,13 @@ All commands use Task (taskfile.yml). Run `task` or `task help` to see available
 
 ## Content
 
-Posts under `content/posts/` are hand-written here and safe to edit — unlike `site`, where they are publisher output. Keep the set small; it exists so the templates have something to render.
+All prose in this repo is placeholder: Old English word-salad, composed from a real vocabulary rather than quoted from any surviving text, standing in for `site`'s writing. That covers `content/` and the identity params in `hugo.yaml` (`title`, `author`, `description`, `motto`, `home`, `contact`, `social`). Do not replace it with real content, and do not copy `site`'s prose back over it — the point is to see layout and typography, not to read.
+
+`params.contact` is fabricated on purpose. This repo publishes a vCard at `/vcard.vcf`; `site` deliberately puts real PII there, and a public sandbox must not. Keep the invented address, the 555-01xx phone, and the `example.com` addresses.
+
+`layouts/` stays in English. Template chrome is UI, not content, and byte-identical templates are what make this repo useful for trying layout changes before porting them to `site`.
+
+Posts under `content/posts/` are generated, not publisher output, and are safe to regenerate, edit, add, or delete — but `params.home.featured` and `startHere` reference them by slug, so renaming or removing one means updating `hugo.yaml` or the strict build fails.
 
 ## Testing
 

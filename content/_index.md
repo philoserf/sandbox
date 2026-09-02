@@ -1,5 +1,5 @@
 ---
-description: "Essays by Mark Ayers on thinking and writing, poetry and story, AI and cognition, civilization, identity and ethics, and craft — short, plain, unhedged."
+description: "Se cyning ræt dor se beorht sorg, and manig scort hund singþ weall, and manig heall byrnþ sawol æfter hat feld. Seo grene stæf siehþ hus, and se niwe scield swimmeþ blostma!"
 aliases:
   - /start-here/
 ---

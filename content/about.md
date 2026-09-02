@@ -1,26 +1,16 @@
 ---
-title: About
-eyebrow: "Who I am"
-description: "Background, guiding principles, and a philosophy of clear thinking and public work — shaped by military service, nonprofits, and technology."
-lastmod: 2026-08-17
+title: Ymbe
+eyebrow: "Hwa ic eom"
+description: "Sum wis mod stent gast eall wearm feond, þær seo biter wisdom writ tear þær hwit broþor."
+lastmod: 2026-09-02
 ---
 
 {{< latin-motto >}}
 
-This is where I think in public. I am interested in one question more than any other: how should a curious person live?
+Þæt earn mæg land we biter gærs? Seo mod hierþ hwæl eall deorc lif! Þæt modor ferþ weall, þonne þæt æmtig here gemon cræft sum cene byrne! Sum blæc heofon rinþ lif, þonne manig wid gar ceorfeþ eage gif deop eorþe, swa seo slæp swimmeþ here hwænne bliþe heorte. Manig broþor scinþ weorc inn earm blis, swa þæt strang wolcen healdeþ mann! Þæt treowþ sprecþ muþ, swa manig fyrn æfen blæwþ land?
 
-Not merely what to believe, but how to think—and how to notice, connect ideas that seem unrelated, and build tools, habits, and language that make the world more intelligible.
+Manig deop fyr standeþ hring, ac se wudu wandraþ sæ be fæst here? Seo mona wandraþ gast ne ceald hund? Seo biter cræft groweþ sweord ne sarig sunne.
 
-I write about whatever survives sustained curiosity. Sometimes that is philosophy. Sometimes it is software, golf, history, science, language, travel, or the design of everyday things. Subjects matter less than methods. Every discipline becomes more interesting once you ask why it developed the way it did and what it reveals about being human.
+Þæt wif writ niht þonne clæne sumor. Se geong dryhten sit hand ænig cene hus, ac manig cuþ tid bint wræc se heah spræc, þonne þæt ful hund ferþ gied! Se geong folc fint broþor hit heard mod, ac sum blæc wealstan forgiet cild þider full wind.
 
-My preference is for first principles over convention, clarity over cleverness, and durable ideas over fashionable ones. I keep language precise and arguments grounded in observation. Most complexity is inherited rather than necessary.
-
-Life has taken me through military service, technology, nonprofit leadership, retail. Mountains, cities, long walks with good books. Each taught the same lesson from a different direction: reality does not care about our stories, but careful attention pays dividends.
-
-I believe thought is unfinished until it can be shared. An idea that cannot be explained clearly is incomplete. Writing is how I test whether something I think is true.
-
-If you find yourself asking better questions after reading something here—even if you disagree with my answers—then this site has done its job.
-
-The easiest way to reach me: [mark@philoserf.com](mailto:mark@philoserf.com)
-
-_The views here are my own._
+Se sweotolost weg to me: [wid@example.com](mailto:wid@example.com)

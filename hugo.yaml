@@ -1,77 +1,86 @@
 baseURL: https://philoserf.github.io/sandbox/
 locale: en-us
-title: Mark Ayers
+title: Ælfwine Wulfing
 enableGitInfo: true
 enableRobotsTXT: true
 taxonomies: {} # intentionally empty to disable tags and categories
 
 params:
-  author: "Mark Ayers"
+  author: "Ælfwine Wulfing"
   since: 2005
-  description: "Short, plain, unhedged essays on thinking and cognition, civilization, and identity — with poetry, story, and the small crafts of attention: coffee, calendars, kitchens, and code."
-  email: "mark@philoserf.com"
-  # Latin motto; primary is the line used standalone (vCard NOTE) and also
-  # appears in lines — keep the two in sync. Two lines here, matching the
-  # other properties; site carries a third, PERCIPE·STRUE·EFFICE.
+  description: "Scort gied and sarig spræc ymbe wisdom and wræc, mid sang, run, and þa lytlan cræftas: fyr, tid, meduheall, and stæf."
+  email: "wid@example.com"
+  # Placeholder motto, Old English in place of site's Latin; primary is the
+  # line used standalone (vCard NOTE) and also appears in lines — keep the
+  # two in sync. Two lines here, as site's has two.
   motto:
-    primary: "COGITA·DISCE·NECTE·ENUNTIA"
+    primary: "ÞENC·LEORNA·BIND·CWEÐ"
     lines:
-      - "HOMO·HOMINIS·ESSE"
-      - "COGITA·DISCE·NECTE·ENUNTIA"
-  nickname: "philoserf"
+      - "MANN·BIÐ·MANNES"
+      - "ÞENC·LEORNA·BIND·CWEÐ"
+  nickname: "widsith"
   # Warm-paper background hexes; must match --background-color in static/style.css
   themeColor:
     light: "#faf7f1"
     dark: "#201d18"
 
   home:
-    headline: "Uncompressed public thinking"
-    startHereIntro: "Essays that say what the rest is trying to do."
+    headline: "Uncuþ gemynd on gemot"
+    startHereIntro: "Gied þe secgaþ hwæt þa oþre fundiaþ to donne."
     featured:
-      - pageRef: /posts/beginning-before-ready
+      - pageRef: /posts/sae-deop-flan
+      - pageRef: /posts/thurst-scip-haerfest-geong
+    # Drawn from the older posts on purpose: index.html fills "Recent" with
+    # the newest four that are not featured, so picking those here would
+    # print the same four titles twice on the home page.
     startHere:
-      - pageRef: /posts/bare-feet-on-snow
-      - pageRef: /posts/chemex-coffee-brewing-guide
+      - pageRef: /posts/theow-dysig-hring
+      - pageRef: /posts/cuth-fyrn
+      - pageRef: /posts/tear-hors-wif-aemtig
+      - pageRef: /posts/staef-waeter-wif
 
+  # Invented throughout: this repo publishes a vCard at /vcard.vcf, and a
+  # public sandbox is no place for real contact details. The phone is in the
+  # 555-01xx range reserved for fiction; the domain is RFC 2606's example.com.
   contact:
-    givenName: "Mark"
-    familyName: "Ayers"
-    birthday: "19620704"
-    phone: "+12062804061"
-    timezone: "America/Detroit"
+    givenName: "Ælfwine"
+    familyName: "Wulfing"
+    birthday: "09750427"
+    phone: "+12025550137"
+    timezone: "Europe/London"
     address:
-      street: "160 Rollingwood Dr"
-      city: "Rockford"
-      region: "MI"
-      postalCode: "49341"
-      country: "United States"
+      street: "12 Meduhealle Weg"
+      city: "Heorot"
+      region: "Westseaxe"
+      postalCode: "XX0 0XX"
+      country: "Engla Land"
 
   social:
-    github: "https://github.com/philoserf"
-    mastodon: "https://pkm.social/@philoserf"
+    github: "https://example.com/widsith"
+    mastodon: "https://example.com/@widsith"
 
 menus:
   main:
-    - name: About
+    - name: Ymbe
       pageRef: /about
       weight: 10
       params:
-        description: Who the author is
-    - name: Now
+        description: Hwa se writere is
+    - name: Nu
       pageRef: /now
       weight: 20
       params:
-        description: Current focus
-    - name: Uses
+        description: Þæt þe nu is on hand
+    - name: Notu
       pageRef: /uses
       weight: 30
       params:
-        description: Tools and setup
-    - name: Posts
+        description: Tol and geteoh
+    - name: Gied
       pageRef: /posts
       weight: 40
       params:
-        description: Index of all posts
+        description: Ealra gieda tæl
         llmsSection: writing
 
 mediaTypes:

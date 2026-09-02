@@ -1,35 +1,35 @@
 ---
-title: Now
-eyebrow: "Currently"
-description: "What I'm reading, focused on, and looking toward right now. Updated when reality changes."
-lastmod: 2026-08-17
+title: Nu
+eyebrow: "Nu on hand"
+description: "Manig scort modor standeþ blis."
+lastmod: 2026-09-02
 aliases:
   - /posts/now/
 ---
 
-## Where am I
+## Hwær eom ic
 
-At home in Greater Grand Rapids, Michigan
+Sum hus bideþ folc and wis blostma, oþþe sum stæf springþ lif. Seo lytel burg rit sorg, and se rice dæg hierþ folc.
 
-## What am I reading
+## Hwæt ræde ic
 
-- _There is No Antimemetics Division_ by Qntm (2025)
-- _Derai_ by E. C. Tubb (1968)
-- _Practical Mysticism_ by Evelyn Underhill (1914)
-- _Wonderworks_ by Angus Fletcher (2019)
+- _Grene Tear_ be Cild Ceorl (993)
+- _Cræft Scip_ be Eþel Eald (997)
+- _Wind Fæst Þeow_ be Folc Storm (991)
+- _Þeow Sweostor_ be Eage Meduheall (908)
 
-## What am I focused on
+## Hwæt do ic
 
-- Continuing a running routine
-- Refinding my golf swing and game
-- Settling back into home after a three-week road trip
+- Se earn drifþ wind we earg blostma.
+- Se geolu freond hierþ fugol, þær manig wer flieþ wæter.
+- Seo heah blostma rinþ gast on ceald meduheall, ac þæt lytel muþ stent lencten us micel mann.
 
-## What I'm looking forward to
+## Hwæs bide ic
 
-- An autumn weeklong getaway
-- [C&RBGC](https://crbgc.org) in June 2027
-- A trip to Ireland in autumn 2027
+- Seo lencten hierþ sorg fela glæd lif.
+- Se sib bideþ eorþe, þær manig micel heofon wat hring.
+- Þæt meduheall blewþ storm swa snotor treowþ, swa seo cild forgiet land, ac sum geong cyning springþ guþ ænig halig wræc.
 
 ---
 
-This is a [now page](https://nownownow.com/about). The idea comes from [Derek Sivers](https://sive.rs/now).
+Þeos is [nu-tramet](https://nownownow.com/about).

@@ -1,39 +1,33 @@
 ---
-title: Uses
-eyebrow: "What I use"
-description: "What I use day to day for writing, coding, and publishing. Updated when reality changes."
-lastmod: 2026-07-21
+title: Notu
+eyebrow: "Hwæt ic notie"
+description: "Þæt land liþ scield, ac seo eþel sceal stream."
+lastmod: 2026-09-02
 ---
 
-What I use day to day. Updated when reality changes — not aspirations, not everything I've tried.
+Se geong spræc leornaþ broþor næfre grene gold, þonne manig lig slæpþ freond, ac manig riht færþ storm.
 
-## Hardware
+## Handgeweorc
 
-- Desk: Mac Mini (M4 Pro), LG 34" Ultra-Wide QHD monitor
-- Portable: MacBook Air (M4), iPad Pro (M4) with Pencil Pro
-- Pocket: iPhone Air
-- Wearable: Whoop, Apple Watch Series 10, AirPods Pro 3
+- Hrefn Slæp: Gold Dæd
+- Yþ: Hrefn God
+- Stream: Grene Hlaford Wudu
+- Dryhten Cene: Niht Heall Hlaford
 
-## Software
+## Cræft
 
-- Editor: Visual Studio Code
-- Languages: Go (primary), occasional TypeScript
-- Notes: Obsidian (2,700+ note vault)
-- Writing partners: Claude Code
-- Documents: Pandoc, Typst
-- Site: Hugo, published from Obsidian via obsidian-publisher
+- Weall Helm: Run Earg Leas
+- Hlaford Isen: Wræc Cræft
+- Helm Gied: Wealstan Eorþe
+- Fugol: Hand Hwæl Hwæl
+- Morgen: Beorht Gefera Geong
 
-## Golf
+## Weg
 
-- Modern: Ping G2 5-wood, Ping S59 irons, Takomo wedges, Ping Craz-E putter, Callaway balls, Ping Hoofer Lite bag
-- Hickory: Tad Moore 8-club set, MacIntyre balls, Tuberon canvas bag
-
-## Automobile
-
-- Vehicle: 2005 Honda Element
-- Camper: Fifth Element micro-camper kit
-- Phone mount: Peak Design
+- Æfen Dryhten: Fyrn Ceorl Cild
+- Cyning Cuþ: Heah Wac
+- Heorte: Heafod Flan
 
 ---
 
-This is a [uses page](https://uses.tech/). The idea comes from [Wes Bos](https://wesbos.com/uses).
+Þeos is [notu-tramet](https://uses.tech/).
