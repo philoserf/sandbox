@@ -10,14 +10,9 @@ params:
   since: 2005
   description: "Scort gied and sarig spræc ymbe wisdom and wræc, mid sang, run, and þa lytlan cræftas: fyr, tid, meduheall, and stæf."
   email: "wid@example.com"
-  # Placeholder motto, Old English in place of site's Latin; primary is the
-  # line used standalone (vCard NOTE) and also appears in lines — keep the
-  # two in sync. Two lines here, as site's has two.
-  motto:
-    primary: "ÞENC·LEORNA·BIND·CWEÐ"
-    lines:
-      - "MANN·BIÐ·MANNES"
-      - "ÞENC·LEORNA·BIND·CWEÐ"
+  # Placeholder motto, Old English in place of site's Latin — home page,
+  # About page, and the vCard NOTE field.
+  motto: "ÞENC·LEORNA·BIND·CWEÐ"
   nickname: "widsith"
   # Warm-paper background hexes; must match --background-color in static/style.css
   themeColor:
