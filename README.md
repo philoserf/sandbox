@@ -1,6 +1,6 @@
 # sandbox
 
-A staging copy of [philoserf/site](https://github.com/philoserf/site) — same layouts, styles, config, and workflows, with throwaway posts. Changes to the rendering half of the site are tried here first, then ported to `site`. Deployed to [philoserf.github.io/sandbox](https://philoserf.github.io/sandbox/). **Site motto:** COGITA·DISCE·NECTE·ENUNTIA (Think, Learn, Connect, Articulate).
+A staging copy of [philoserf/site](https://github.com/philoserf/site) — same layouts, styles, config, and workflows, with throwaway posts. Changes to the rendering half of the site are tried here first, then ported to `site`. Deployed to [philoserf.github.io/sandbox](https://philoserf.github.io/sandbox/). **Site motto:** COGITA·DISCE·NECTE·FARE (Think, Learn, Connect, Speak).
 
 ## What this repo is
 
@@ -17,7 +17,6 @@ Everything else should stay a faithful mirror of `site`. The intended difference
 - All prose: `content/` and the identity params in `hugo.yaml` — `title`, `author`, `description`, `motto`, `home`, `contact`, `social` — are placeholder, not `site`'s real content
 - `params.contact` is invented. `site` deliberately publishes real vCard PII; a public sandbox should not, so the address, phone (555-01xx, reserved for fiction), and birthday here are fabricated, and `email`/`social` point at `example.com`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
-- `params.motto.lines`, two lines here to match the other properties; `site` carries a third, `PERCIPE·STRUE·EFFICE`
 - `content/posts/`, and `.prettierignore` not excluding it
 - `theory.md`, `walkthrough.md`, and `.claude/`, which document `site`'s publisher relationship
 
@@ -37,7 +36,7 @@ Run `task --list` for the rest.
 
 - **No taxonomies.** `taxonomies: {}` in `hugo.yaml` is intentional; posts may carry `tags` but the site discards them.
 - **Templated identity.** Author name, motto, contact details, and vCard fields all live in `hugo.yaml` `params`. Five home-page output formats (`html`, `rss`, `llms`, `manifest`, `vcard`) and `robots.txt` are templated from it — no `vcard.vcf`, `site.webmanifest`, or `llms.txt` under `static/`.
-- **The `latin-motto` shortcode is no longer Latin.** The name matches `site`, and renaming it would diverge the templates for nothing; it renders whatever `params.motto.lines` holds.
+- **The `latin-motto` shortcode is no longer Latin.** The name matches `site`, and renaming it would diverge the templates for nothing; it renders whatever `params.motto` holds.
 - **Two archetypes, asymmetric on purpose.** `archetypes/default.md` scaffolds `lastmod` only (structural pages); `archetypes/posts.md` scaffolds `date` only (essays), letting `enableGitInfo` backfill `lastmod` from the commit date.
 - **`hugo --panicOnWarning` is the integration test.** There is no test suite. The strict build catches missing shortcodes and broken refs, including the home-page `pageRef` entries.
 - **Conditional asset loading.** KaTeX loads when a page sets `math: true`; Mermaid loads when a page uses the `mermaid` shortcode; `callout.css` loads when a page uses the `callout` shortcode. Don't add unconditional scripts to `baseof.html`.
