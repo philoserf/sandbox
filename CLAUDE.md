@@ -6,7 +6,7 @@ This repo is a staging copy of [philoserf/site](https://github.com/philoserf/sit
 
 ## Commands
 
-All commands use Task (taskfile.yml). Run `task` or `task help` to see available tasks.
+All commands use Task (Taskfile.yml). Run `task` or `task help` to see available tasks.
 
 ## Architecture
 
