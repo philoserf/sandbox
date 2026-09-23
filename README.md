@@ -1,5 +1,7 @@
 # sandbox
 
+![Status: Staging](https://img.shields.io/badge/Status-Staging-lightgrey.svg)
+
 A staging copy of [philoserf/site](https://github.com/philoserf/site) — same layouts, styles, config, and workflows, with throwaway posts. Changes to the rendering half of the site are tried here first, then ported to `site`. Deployed to [philoserf.github.io/sandbox](https://philoserf.github.io/sandbox/). **Site motto:** COGITA·DISCE·NECTE·FARE (Think, Learn, Connect, Speak).
 
 ## What this repo is
