@@ -14,8 +14,6 @@ params:
   since: 2005
   description: "Scort gied and sarig spræc ymbe wisdom and wræc, mid sang, run, and þa lytlan cræftas: fyr, tid, meduheall, and stæf."
   email: "wid@example.com"
-  # RFC 9116 contact for /.well-known/security.txt
-  securityEmail: "security@example.com"
   # Placeholder motto, Old English in place of site's Latin — home page,
   # About page, and the vCard NOTE field.
   motto: "ÞENC·LEORNA·BIND·CWEÐ"
@@ -109,13 +107,6 @@ outputFormats:
     baseName: vcard
     isPlainText: true
     notAlternative: true
-  security:
-    name: security
-    mediaType: text/plain
-    baseName: security
-    path: .well-known
-    isPlainText: true
-    notAlternative: true
 
 outputs:
   home:
@@ -124,4 +115,3 @@ outputs:
     - llms
     - manifest
     - vcard
-    - security

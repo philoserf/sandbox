@@ -21,7 +21,7 @@ All commands use Task (Taskfile.yml). Run `task` or `task help` to see available
 
 ## Content
 
-All prose in this repo is placeholder: Old English word-salad, composed from a real vocabulary rather than quoted from any surviving text, standing in for `site`'s writing. That covers `content/` and the identity params in `hugo.yaml` (`title`, `author`, `description`, `email`, `securityEmail`, `motto`, `home`, `contact`, `social`). Do not replace it with real content, and do not copy `site`'s prose back over it — the point is to see layout and typography, not to read.
+All prose in this repo is placeholder: Old English word-salad, composed from a real vocabulary rather than quoted from any surviving text, standing in for `site`'s writing. That covers `content/` and the identity params in `hugo.yaml` (`title`, `author`, `description`, `email`, `motto`, `home`, `contact`, `social`). Do not replace it with real content, and do not copy `site`'s prose back over it — the point is to see layout and typography, not to read.
 
 `params.contact` is fabricated on purpose. This repo publishes a vCard at `/vcard.vcf`; `site` deliberately puts real PII there, and a public sandbox must not. Keep the invented address, the 555-01xx phone, and the `example.com` addresses.
 
