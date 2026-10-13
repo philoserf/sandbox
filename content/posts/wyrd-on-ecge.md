@@ -1,7 +1,7 @@
 ---
 title: "Wyrd on Ecge"
 description: "Se wis mann segþ þæt þæt folc stent on ecge, ac seo ecg is spell, na tacn."
-date: 2026-10-13T10:30:00-04:00
+date: 2026-11-02
 ---
 
 "We habbaþ þæt folc on ecge gewend to unhalgum gemenge."[^1] Seo spræc bireþ sum cynn sorge, and seo sorg hæfþ dierne fruman.

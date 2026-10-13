@@ -39,7 +39,7 @@ There is no end-to-end test. The strict Hugo build (`--panicOnWarning` in `task 
 
 ## Deployment
 
-A Cloudflare Worker at `sandbox.philoserf.com`, deployed by Workers Builds on every push to `main` (other branches get preview uploads). `wrangler.jsonc`'s `build.command` is the whole build, the same on a Mac (`task deploy`) and in the build image, so change the build there and nowhere else. Workers Builds clones shallow, and `enableGitInfo` then dates every post to the head commit, so `build.command` fetches full history before Hugo runs. A run of identical post `lastmod` dates in `sitemap.xml` means that step stopped working. A Monday 05:00 deploy-hook call from `almanac`'s `~/.config/refresh.zsh` rebuilds for future-dated posts. This hosting is the rehearsal for site's move ([#16](https://github.com/philoserf/sandbox/issues/16)).
+A Cloudflare Worker at `sandbox.philoserf.com`, deployed by Workers Builds on every push to `main` (other branches get version uploads, which build and validate but give no preview URL). `wrangler.jsonc`'s `build.command` is the whole build, the same on a Mac (`task deploy`) and in the build image, so change the build there and nowhere else. Workers Builds clones shallow, and `enableGitInfo` then dates every post to the head commit, so `build.command` fetches full history before Hugo runs. A run of identical post `lastmod` dates in `sitemap.xml` means that step stopped working. A Monday 05:00 deploy-hook call from `almanac`'s `~/.config/refresh.zsh` rebuilds for future-dated posts.
 
 ## Notes
 
