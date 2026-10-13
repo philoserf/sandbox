@@ -20,7 +20,7 @@ Everything else should stay a faithful mirror of `site`. The intended difference
 - `params.contact` is invented. `site` deliberately publishes real vCard PII; a public sandbox should not, so the address, phone (555-01xx, reserved for fiction), and birthday here are fabricated, and `email`/`social` point at `example.com`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
 - `content/posts/`, and `.prettierignore` not excluding it
-- `theory.md`, `walkthrough.md`, and `.claude/`, which document `site`'s publisher relationship
+- `THEORY.md`, `WALKTHROUGH.md`, and `.claude/`, which document `site`'s publisher relationship
 
 ## Tasks
 
