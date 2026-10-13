@@ -2,7 +2,7 @@
 
 ![Status: Staging](https://img.shields.io/badge/Status-Staging-lightgrey.svg)
 
-A staging copy of [philoserf/site](https://github.com/philoserf/site) — same layouts, styles, config, and workflows, with throwaway posts. Changes to the rendering half of the site are tried here first, then ported to `site`. Deployed to [philoserf.github.io/sandbox](https://philoserf.github.io/sandbox/). **Site motto:** COGITA·DISCE·NECTE·FARE (Think, Learn, Connect, Speak).
+A staging copy of [philoserf/site](https://github.com/philoserf/site) — same layouts, styles, config, and workflows, with throwaway posts. Changes to the rendering half of the site are tried here first, then ported to `site`. Deployed to [sandbox.philoserf.com](https://sandbox.philoserf.com/). **Site motto:** COGITA·DISCE·NECTE·FARE (Think, Learn, Connect, Speak).
 
 ## What this repo is
 
@@ -14,9 +14,9 @@ The placeholder is composed, not quoted. Like Latin lorem ipsum, which scrambles
 
 Everything else should stay a faithful mirror of `site`. The intended differences are:
 
-- `baseURL` and the `github.repository` guard in `deploy.yml` (this repo, not `philoserf.com`)
-- No `security.txt`: `layouts/index.security.txt`, `params.securityEmail`, the `security` output format and `include-hidden-files` in `deploy.yml`. It will be Cloudflare-managed, and site drops its own in [site#935](https://github.com/philoserf/site/issues/935), after which this line goes
-- `static/CNAME.pending` instead of `static/CNAME` — the domain stays pointed at `site`
+- `baseURL` (`sandbox.philoserf.com`, not `philoserf.com`)
+- Hosting, until site follows ([#16](https://github.com/philoserf/sandbox/issues/16)): sandbox is a Cloudflare Worker built by Workers Builds, so it has `wrangler.jsonc`, the `deploy` and `links` tasks and `/.wrangler/` in `.gitignore`, and no `.github/` or `static/CNAME`
+- No `security.txt`: `layouts/index.security.txt`, `params.securityEmail` and the `security` output format. It will be Cloudflare-managed, and site drops its own in [site#935](https://github.com/philoserf/site/issues/935), after which this line goes
 - All prose: `content/` and the identity params in `hugo.yaml` — `title`, `author`, `description`, `email`, `motto`, `home`, `contact`, `social` — are placeholder, not `site`'s real content
 - `params.contact` is invented. `site` deliberately publishes real vCard PII; a public sandbox should not, so the address, phone (555-01xx, reserved for fiction), and birthday here are fabricated, and `email`/`social` point at `example.com`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
@@ -31,6 +31,8 @@ task dev     # hugo server -D -F (drafts + future content visible)
 task build   # hugo --gc --minify --panicOnWarning (production)
 task check   # hugo --renderToMemory --panicOnWarning (the integration test)
 task format  # prettier --write .
+task links   # lychee over public/ (external links and anchors)
+task deploy  # build and deploy by hand; pushes to main deploy on their own
 ```
 
 Run `task --list` for the rest.
@@ -48,7 +50,7 @@ Run `task --list` for the rest.
 
 ## Deployment
 
-GitHub Pages, artifact-based, via `.github/workflows/deploy.yml`. Triggered on push to `main`, manual dispatch, and daily at 08:25 UTC.
+A Cloudflare Worker serving `public/` as static assets, with Hugo's `404.html` as the not-found page. Workers Builds, Cloudflare's git integration, runs `bunx wrangler deploy` on every push to `main`, and `bunx wrangler versions upload` on other branches for a preview URL. Either one first runs `build.command` from `wrangler.jsonc`: a validate pass over drafts and future-dated posts, then the strict build. `almanac` calls the Worker's deploy hook every Monday at 05:00 Eastern from `~/.config/refresh.zsh`, so a future-dated post goes live within a week of its date. The build image's Hugo is set by the `HUGO_VERSION` build variable in the dashboard, not by this repo.
 
 ## License
 

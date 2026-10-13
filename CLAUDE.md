@@ -33,15 +33,14 @@ Posts under `content/posts/` are generated, not publisher output, and are safe t
 
 ## Testing
 
-There is no end-to-end test. The strict Hugo build (`--panicOnWarning` in `task check`, `build.yml`, and `deploy.yml`) catches missing shortcodes, broken refs, and template errors; anything subtler is caught by visual review.
+There is no end-to-end test. The strict Hugo build (`--panicOnWarning` in `task check` and in `wrangler.jsonc`'s `build.command`, which every Workers Build runs) catches missing shortcodes, broken refs, and template errors; anything subtler is caught by visual review.
 
-The deploy workflow also runs `lychee` over `public/` (external links and anchors), non-blocking (`continue-on-error`).
+`task links` runs `lychee` over `public/` (external links and anchors). It is not part of any deploy.
 
 ## Deployment
 
-Automated to GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`). Builds with `hugo --gc --minify --panicOnWarning`; local `task build` and PR builds use the same strict flags. The build job is guarded by `github.repository == 'philoserf/sandbox'` so forks don't deploy.
+A Cloudflare Worker at `sandbox.philoserf.com`, deployed by Workers Builds on every push to `main` (other branches get preview uploads). `wrangler.jsonc`'s `build.command` is the whole build, the same on a Mac (`task deploy`) and in the build image, so change the build there and nowhere else. Workers Builds clones shallow, and `enableGitInfo` then dates every post to the head commit, so `build.command` fetches full history before Hugo runs. A run of identical post `lastmod` dates in `sitemap.xml` means that step stopped working. A Monday 05:00 deploy-hook call from `almanac`'s `~/.config/refresh.zsh` rebuilds for future-dated posts. This hosting is the rehearsal for site's move ([#16](https://github.com/philoserf/sandbox/issues/16)).
 
 ## Notes
 
 - New content starts as `draft: true` (see archetypes); the dev server includes drafts via `-D`, production does not.
-- `static/CNAME.pending` is parked, not active — `philoserf.com` points at `site`.
