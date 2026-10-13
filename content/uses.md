@@ -3,6 +3,7 @@ title: Notu
 eyebrow: "Hwæt ic notie"
 description: "Þæt land liþ scield, ac seo eþel sceal stream."
 lastmod: 2026-09-02
+showUpdated: true
 ---
 
 Se geong spræc leornaþ broþor næfre grene gold, þonne manig lig slæpþ freond, ac manig riht færþ storm.

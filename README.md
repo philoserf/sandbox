@@ -15,8 +15,9 @@ The placeholder is composed, not quoted. Like Latin lorem ipsum, which scrambles
 Everything else should stay a faithful mirror of `site`. The intended differences are:
 
 - `baseURL` and the `github.repository` guard in `deploy.yml` (this repo, not `philoserf.com`)
+- No `security.txt`: `layouts/index.security.txt`, `params.securityEmail`, the `security` output format and `include-hidden-files` in `deploy.yml`. It will be Cloudflare-managed, and site drops its own in [site#935](https://github.com/philoserf/site/issues/935), after which this line goes
 - `static/CNAME.pending` instead of `static/CNAME` — the domain stays pointed at `site`
-- All prose: `content/` and the identity params in `hugo.yaml` — `title`, `author`, `description`, `motto`, `home`, `contact`, `social` — are placeholder, not `site`'s real content
+- All prose: `content/` and the identity params in `hugo.yaml` — `title`, `author`, `description`, `email`, `motto`, `home`, `contact`, `social` — are placeholder, not `site`'s real content
 - `params.contact` is invented. `site` deliberately publishes real vCard PII; a public sandbox should not, so the address, phone (555-01xx, reserved for fiction), and birthday here are fabricated, and `email`/`social` point at `example.com`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
 - `content/posts/`, and `.prettierignore` not excluding it

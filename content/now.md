@@ -3,6 +3,7 @@ title: Nu
 eyebrow: "Nu on hand"
 description: "Manig scort modor standeþ blis."
 lastmod: 2026-09-02
+showUpdated: true
 aliases:
   - /posts/now/
 ---
@@ -17,6 +18,8 @@ Sum hus bideþ folc and wis blostma, oþþe sum stæf springþ lif. Seo lytel bu
 - _Cræft Scip_ be Eþel Eald (997)
 - _Wind Fæst Þeow_ be Folc Storm (991)
 - _Þeow Sweostor_ be Eage Meduheall (908)
+
+Eac: [bec þe ic rædde]({{< relref "books-i-have-read" >}}) and [bec þe ic ræde mæge]({{< relref "books-i-may-read" >}}).
 
 ## Hwæt do ic
 
