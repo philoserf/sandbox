@@ -2,6 +2,10 @@ baseURL: https://philoserf.github.io/sandbox/
 locale: en-us
 title: Ælfwine Wulfing
 enableGitInfo: true
+# A hand-set lastmod beats the git date: structural pages set lastmod when their
+# content changes, while posts omit it and fall back to the last commit.
+frontmatter:
+  lastmod: [lastmod, ":git", date, publishDate]
 enableRobotsTXT: true
 taxonomies: {} # intentionally empty to disable tags and categories
 
@@ -10,14 +14,16 @@ params:
   since: 2005
   description: "Scort gied and sarig spræc ymbe wisdom and wræc, mid sang, run, and þa lytlan cræftas: fyr, tid, meduheall, and stæf."
   email: "wid@example.com"
+  # RFC 9116 contact for /.well-known/security.txt
+  securityEmail: "security@example.com"
   # Placeholder motto, Old English in place of site's Latin — home page,
   # About page, and the vCard NOTE field.
   motto: "ÞENC·LEORNA·BIND·CWEÐ"
   nickname: "widsith"
   # Warm-paper background hexes; must match --background-color in static/style.css
   themeColor:
-    light: "#faf7f1"
-    dark: "#201d18"
+    light: "#dfe7eb"
+    dark: "#1c272d"
 
   home:
     headline: "Uncuþ gemynd on gemot"
@@ -103,6 +109,13 @@ outputFormats:
     baseName: vcard
     isPlainText: true
     notAlternative: true
+  security:
+    name: security
+    mediaType: text/plain
+    baseName: security
+    path: .well-known
+    isPlainText: true
+    notAlternative: true
 
 outputs:
   home:
@@ -111,3 +124,4 @@ outputs:
     - llms
     - manifest
     - vcard
+    - security
