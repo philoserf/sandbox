@@ -16,7 +16,6 @@ Everything else should stay a faithful mirror of `site`. The intended difference
 
 - `baseURL` (`sandbox.philoserf.com`, not `philoserf.com`)
 - Hosting, until site follows ([#16](https://github.com/philoserf/sandbox/issues/16)): sandbox is a Cloudflare Worker built by Workers Builds, so it has `wrangler.jsonc`, the `deploy` and `links` tasks and `/.wrangler/` in `.gitignore`, and no `.github/` or `static/CNAME`
-- No `security.txt`: `layouts/index.security.txt`, `params.securityEmail` and the `security` output format. It will be Cloudflare-managed, and site drops its own in [site#935](https://github.com/philoserf/site/issues/935), after which this line goes
 - All prose: `content/` and the identity params in `hugo.yaml` — `title`, `author`, `description`, `email`, `motto`, `home`, `contact`, `social` — are placeholder, not `site`'s real content
 - `params.contact` is invented. `site` deliberately publishes real vCard PII; a public sandbox should not, so the address, phone (555-01xx, reserved for fiction), and birthday here are fabricated, and `email`/`social` point at `example.com`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
