@@ -44,7 +44,7 @@ Run `task --list` for the rest.
 - **Two archetypes, asymmetric on purpose.** `archetypes/default.md` scaffolds `lastmod` only (structural pages); `archetypes/posts.md` scaffolds `date` only (essays), letting `enableGitInfo` backfill `lastmod` from the commit date.
 - **`hugo --panicOnWarning` is the integration test.** There is no test suite. The strict build catches missing shortcodes and broken refs, including the home-page `pageRef` entries.
 - **Conditional asset loading.** KaTeX loads when a page sets `math: true`; Mermaid loads when a page uses the `mermaid` shortcode; `callout.css` loads when a page uses the `callout` shortcode. Don't add unconditional scripts to `baseof.html`.
-- **Theme colors are mirrored.** `params.themeColor` in `hugo.yaml` must match `--background-color` in `static/style.css`.
+- **Theme colors are mirrored.** `params.themeColor` in `hugo.yaml` must match `--background-color` in `assets/css/style.css`.
 - **vCard PII is intentional.** `layouts/index.vcard.vcf` includes home address, mobile, and date of birth deliberately.
 
 ## Deployment

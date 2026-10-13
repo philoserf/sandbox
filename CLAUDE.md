@@ -17,7 +17,7 @@ All commands use Task (Taskfile.yml). Run `task` or `task help` to see available
 - **Home page**: `params.home.featured` and `params.home.startHere` are lists of `pageRef` entries resolved by `layouts/partials/resolve-pagerefs.html`, which calls `errorf` on a broken ref — a strict build fails rather than rendering an empty card. These lists reference this repo's own posts, so do not copy `site`'s values verbatim.
 - **Shortcodes**: `callout` and `mermaid` mirror `site`, where they are reference templates from the publisher plugin. Mermaid loads from jsDelivr with an SRI hash via `layouts/partials/mermaid.html`, conditionally on `.HasShortcode "mermaid"` — bumping the pinned version requires recomputing the `integrity` hash.
 - **Generated text files**: `robots.txt`, `site.webmanifest`, `vcard.vcf`, `llms.txt` render from `layouts/` templates via custom output formats on the home page — do not re-create them under `static/`
-- **Theme colors**: `params.themeColor.light` / `.dark` in hugo.yaml feed the `theme-color` metas and the webmanifest; they must match `--background-color` in `static/style.css`.
+- **Theme colors**: `params.themeColor.light` / `.dark` in hugo.yaml feed the `theme-color` metas and the webmanifest; they must match `--background-color` in `assets/css/style.css`.
 
 ## Content
 
