@@ -1,6 +1,10 @@
 baseURL: https://sandbox.philoserf.com/
 locale: en-us
 title: Ælfwine Wulfing
+# Date-only front matter is midnight here, not UTC, so a queued post goes live
+# on its own date rather than the evening before. Shared with site: it is the
+# release mechanism, not placeholder identity like params.contact.timezone.
+timeZone: America/Detroit
 enableGitInfo: true
 # A hand-set lastmod beats the git date: structural pages set lastmod when their
 # content changes, while posts omit it and fall back to the last commit.
