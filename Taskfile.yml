@@ -12,7 +12,8 @@ tasks:
 
   setup:
     desc: Install required tools with Homebrew
-    # Up to date when every Brewfile entry is installed, not when the file is unchanged.
+    # Up to date only when every Brewfile entry is installed; a checksum of the
+    # Brewfile would miss tools removed from the machine.
     status:
       - brew bundle check --file=Brewfile --no-upgrade
     cmds:
@@ -79,7 +80,7 @@ tasks:
   format:
     desc: Format code with bun fmt (excluding Hugo templates)
     cmds:
-      - bun fmt
+      - bun fmt .
 
   optimize-images:
     desc: Optimize PNG and JPEG images in static/
