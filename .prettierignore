@@ -2,9 +2,9 @@
 /public/
 /resources/
 
-# Hugo templates — Prettier doesn't handle Hugo template syntax
+# Hugo templates — the formatter doesn't handle Hugo template syntax
 /layouts/
 /archetypes/
 
-# Ignored through the global core.excludesfile, which prettier does not read.
+# Also in .gitignore; listed here so the ignore does not depend on the formatter reading it.
 /.issues/
