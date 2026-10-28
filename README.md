@@ -21,6 +21,7 @@ Everything else should stay a faithful mirror of `site`. The intended difference
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
 - `content/posts/`, and `.prettierignore` not excluding it
 - `THEORY.md`, `WALKTHROUGH.md`, and `.claude/`, which document `site`'s publisher relationship
+- `static/_redirects`, which holds `site`'s redirects for retired and merged posts; sandbox has none
 
 ## Tasks
 
