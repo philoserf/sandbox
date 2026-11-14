@@ -19,7 +19,7 @@ Everything else should stay a faithful mirror of `site`. The intended difference
 - All prose: `content/` and the identity params in `hugo.yaml` — `title`, `author`, `description`, `email`, `motto`, `home`, `contact`, `social` — are placeholder, not `site`'s real content
 - `params.contact` is invented. `site` deliberately publishes real vCard PII; a public sandbox should not, so the address, phone (555-01xx, reserved for fiction), and birthday here are fabricated, and `email`/`social` point at `example.com`
 - `params.home.featured` / `params.home.startHere`, which reference the posts that exist here
-- `content/posts/`, and `.prettierignore` not excluding it
+- `content/posts/`, and `bunfig.toml` not excluding it
 - `THEORY.md`, `WALKTHROUGH.md`, and `.claude/`, which document `site`'s publisher relationship
 - `static/_redirects`, which holds `site`'s redirects for retired and merged posts; sandbox has none
 
